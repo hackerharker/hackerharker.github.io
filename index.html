@@ -1,1 +1,111 @@
-this is the index
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+.anim_class1 {
+  position: absolute;
+  /*left:300px;
+  top:300px;*/
+  animation: moveX1 10s linear 0s infinite alternate, moveY1 34s linear 0s infinite alternate;
+}
+
+
+
+.anim_class2 {
+  position: absolute;
+  display: block;
+  transform: translate(222px, 222px);
+/*
+  left:300px;
+  top:300px;*/
+  animation: moveX2 4s linear 0s infinite alternate, moveY2 3.4s linear 0s infinite alternate;
+ 
+}
+
+
+.anim_class3 {
+  position: absolute;
+  /*left:300px;
+  top:300px;*/
+  animation: moveX3 5s linear 0s infinite alternate, moveY3 34s linear 0s infinite alternate;
+}
+
+@keyframes moveX1 {
+  from { left: 480px; } to { left: 0px; }
+}
+@keyframes moveY1 {
+  from { top: 0px; } to { top: 280px; }
+}
+
+
+@keyframes moveX2 {
+  from { transform: translate(0px,0px );}; to { transform: translate(480px, 0px);};
+}
+
+@keyframes moveY2 {
+  from { transform: translate(0px,280px )}; to { transform: translate(0px,0px )};
+}
+
+/*@keyframes moveY2 {
+  from { top: 0; } to { top: 280px; }
+}
+*/
+
+
+@keyframes moveX3 {
+  from { left: 0; } to { left: 480px; }
+}
+@keyframes moveY3 {
+  from { top: 280; } to { top: 0px; }
+}
+
+
+div.dotted_border {
+position: absolute;
+border-style: dotted;
+width: 400px;
+height: 800px;
+
+}
+
+#location1 {
+    top: 50px;
+    left: 50px;
+}
+
+#location2 {
+    top: 50px;
+    left: 500px;
+}
+
+#location3 {
+    top: 50px;
+    left: 950px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+<div class= "frame_1">
+
+
+<img width=100 height=100 class="anim_class1" src="flower1.png" />
+
+<img left=200 width=300 height=300 class="anim_class2" src="flower2.png">
+
+<img width=300 height=300 class="anim_class3" src="flower3.png">
+
+
+<div id="location1" class="dotted_border" ></div>
+
+<div id="location2" class="dotted_border" ></div>
+
+<div id="location3" class="dotted_border" ></div>
+
+
+</body>
+</html>
