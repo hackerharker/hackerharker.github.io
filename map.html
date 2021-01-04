@@ -8,6 +8,8 @@
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap" rel="stylesheet"> 
+
+    <!-- font-family: 'Inconsolata', monospace; -->
     
     <style>
       body {
@@ -55,6 +57,11 @@
         font-size: large;
         }        
 
+        .mapboxgl-popup {
+        max-width: 400px;
+        font-family: 'Inconsolata', monospace; 
+        }
+
     </style>
   </head>
   <body>
@@ -67,7 +74,7 @@
       
       <br><br>Eventually, the AR tool can evolve to use the user’s geolocation, real-time spatial data about wildfires, and machine learning to provide specific leaf identification suggestions. For example, identification suggestions can take into account specific characteristics of different leaf species when burnt, wind directions, locations of wildfires, user proximity to wildfires, and data on tree species in wildfire locations.
       <br><br>Use the QR code below using your phone to initiate the AR experience.
-      <br><br> <img src= "qr-code.png" style="width: 100px">
+      <br><br> <img src= "qr-code_black.png" style="width: 100px">
     </div>
     
     <div id='map'></div>
