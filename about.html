@@ -1,12 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
 
- <!DOCTYPE html>
- <html>
- <head>
- <style>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
 
- </style>
- </head>
- <body>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+
+<style> 
+
+
+
+
+h1 {
+  position: absolute;
+  display: block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 44px;
+  left:75px;
+  top:75px;
+}
+
+
+p {
+  position: absolute;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  left:75px;
+  top:150px;
+}
+
+p-background {
+  display: block;
+  background-color: rgba(228, 238, 136, 0.959);
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  left:75px;
+  top:150px;
+}
+
+.anim_class1 {
+  position: absolute;
+  opacity: .8;
+  /*left:300px;
+  top:300px;*/
+  animation: moveX1 10s linear 0s infinite alternate, moveY1 34s linear 0s infinite alternate;
+}
+
+.anim_class2 {
+  position: absolute;
+  display: block;
+  opacity: .8;
+  transform: translate(222px, 222px);
+/*
+  left:300px;
+  top:300px;*/
+  animation: moveX2 4s linear 0s infinite alternate, moveY2 3.4s linear 0s infinite alternate;
+}
+
+
+.anim_class3 {
+  position: absolute;
+  opacity: .8;
+  /*left:300px;
+  top:300px;*/
+  animation: moveX3 5s linear 0s infinite alternate, moveY3 34s linear 0s infinite alternate;
+}
+
+.anim_class4 {
+  position: absolute;
+  opacity: .8;
+  /*left:300px;
+  top:300px;*/
+  animation: moveX1 5s linear 0s infinite alternate, moveY1 30s linear 0s infinite alternate;
+}
+
+.anim_class5 {
+  position: absolute;
+  opacity: .8;
+  /*left:300px;
+  top:300px;*/
+  animation: moveX3 8s linear 0s infinite alternate, moveY2 10s linear 0s infinite alternate;
+}
+
+.anim_class6 {
+  position: absolute;
+  opacity: .8;
+  /*left:300px;
+  top:300px;*/
+  animation: moveX1 7s linear 0s infinite alternate, moveY1 30s linear 0s infinite alternate;
+}
+
+.anim_class7 {
+  position: absolute;
+  opacity: .8;
+  /*left:300px;
+  top:300px;*/
+  animation: moveX3 7s linear 0s infinite alternate, moveY1 30s linear 0s infinite alternate;
+}
+
+.anim_class9 {
+  position: absolute;
+  opacity: .8;
+  /*left:300px;
+  top:300px;*/
+  animation: moveX3 7s linear 0s infinite alternate, moveY2 30s linear 0s infinite alternate;
+}
+
+.anim_class10 {
+  position: absolute;
+  opacity: .5;
+  /*left:300px;
+  top:300px;*/
+  animation: moveX1 7s linear 0s infinite alternate, moveY2 30s linear 0s infinite alternate;
+}
+
+.anim_class11 {
+  position: absolute;
+  opacity: .8;
+  /*left:300px;
+  top:300px;*/
+  animation: moveX2 5s linear 0s infinite alternate, moveY3 34s linear 0s infinite alternate;
+}
+
+.anim_class12 {
+  position: absolute;
+  opacity: .8;
+  /*left:300px;
+  top:300px;*/
+  animation: moveX1 5s linear 0s infinite alternate, moveY1 34s linear 0s infinite alternate;
+}
+
+.anim_class_leaf {
+  position: absolute;
+  opacity: .8;
+  /*left:300px;
+  top:300px;*/
+  animation: moveX1 5s linear 0s infinite alternate, moveY3 34s linear 0s infinite alternate;
+}
+
+
+
+@keyframes moveX1 {
+  from { left: 480px; } to { left: 0px; }
+}
+@keyframes moveY1 {
+  from { top: 0px; } to { top: 480px; }
+}
+
+
+@keyframes moveX2 {
+  from { transform: translate(0px,0px );}; to { transform: translate(480px, 0px);};
+}
+
+@keyframes moveY2 {
+  from { transform: translate(0px,480px )}; to { transform: translate(0px,0px )};
+}
+
+/*@keyframes moveY2 {
+  from { top: 0; } to { top: 280px; }
+}
+*/
+
+
+@keyframes moveX3 {
+  from { left: 0; } to { left: 480px; }
+}
+@keyframes moveY3 {
+  from { top: 480; } to { top: 0px; }
+}
+
+
+
+
+div.dotted_border {
+position: absolute;
+background-color: white; opacity: .5;
+width: 400px;
+height: 400px;
+
+}
+
+#location1 {
+    top: 50px;
+    left: 50px;
+}
+
+#location2 {
+    top: 50px;
+    left: 500px;
+}
+
+#location3 {
+    top: 50px;
+    left: 950px;
+}
+
+
+</style>
+</head>
+
+<body>
+
+
+
+<div class= "frame_1">
+
+
+
+<img width=100 height=100 class="anim_class1" src="flower1.png" />
+
+<img left=200 width=300 height=300 class="anim_class2" src="flower2.png">
+
+<img width=300 height=300 class="anim_class3" src="flower3.png">
+
+<img width=100 height=100 class="anim_class4" src="flower4.png">
+
+<img width=100 height=100 class="anim_class5" src="flower5.png">
+
+<img width=100 height=100 class="anim_class6" src="flower6.png">
+
+<img width=100 height=100 class="anim_class7" src="flower7.png">
+
+<img width=300 height=300 class="anim_class9" src="flower9.png">
+
+<img width=250 height=250 class="anim_class10" src="flower10.png">
+
+<!-- ><img width=100 height=100 class="anim_class11" src="flower11.png">-->
+
+<img width=400 height=300 class="anim_class12" src="flower12.png">
+
+<!-- ><img width=100 height=100 class="anim_class_leaf" src="leaf.png">-->
+
+<div id="location1" class="dotted_border" ></div>
+
+<!-- ><div id="location2" class="dotted_border" ></div> -->
+
+<!-- <div id="location3" class="dotted_border" ></div> -->
  
  <img src="portrait2.gif" alt="portrait" width="250" height="250">
  
